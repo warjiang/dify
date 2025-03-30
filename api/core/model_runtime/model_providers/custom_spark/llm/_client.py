@@ -11,10 +11,12 @@ from urllib.parse import urlencode, urlparse
 from wsgiref.handlers import format_date_time
 
 import websocket
-
+import logging
+logger = logging.getLogger("custom_spark")
 
 class SparkLLMClient:
     def __init__(self, model: str, app_id: str, api_key: str, api_secret: str, api_domain: Optional[str] = None):
+        logger.info(f"model:{model} app_id:{app_id} api_key:{api_key} api_secret:{api_secret} api_domain:{api_domain}")
         domain = "spark-api.xf-yun.com"
         endpoint = "chat"
         if api_domain:
