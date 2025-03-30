@@ -5,6 +5,7 @@ on:
     branches:
       - "main"
       - "deploy/dev"
+      - "0.15.2-self-hosted"
   release:
     types: [published]
 
