@@ -1,7 +1,10 @@
 provider: custom_spark
 label:
-  zh_Hans: 讯飞星火
-  en_US: iFLYTEK SPARK
+  zh_Hans: 讯飞星火内部版本
+  en_US: iFLYTEK SPARK Internal
+description:
+  en_US: iFLYTEK SPARK which is used only internally
+  zh_Hans: 讯飞星火内部版本
 icon_small:
   en_US: icon_s_en.svg
 icon_large:
